@@ -1,15 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-.body1{
+.profile_container{
     margin-top: 50px;
     margin-bottom: 50px;
 }
-.body2{
+.buttons_container{
     margin-top: 50px;
     margin-bottom: 50px;
 }
-.icon1{
-    margin-left: 7%;
-    margin-right: 3%;
+.profile_icon{
+    margin-left: 60px;
+    margin-right: 20px;
     float: left;
     height: 80px;
     width: 80px;
@@ -18,17 +18,17 @@
     border: 6px solid #FFF;
     box-shadow: 0 0 0 1px gray;
 }
-h1.sansserif{
+h1.header_one_font{
     font-family: 'Open Sans', serif;
     font-weight: lighter;
     line-height: 50%;
     padding-top: 10px;
 }
-p.sansserif{
+p.paragraph_font{
     font-family: 'Open Sans', serif;
     font-size: 0.8em;
 }
-.button1{
+.connectandmessagebutton{
     width:130px;
     background-color:lightgray;
     border:none;
@@ -45,15 +45,15 @@ p.sansserif{
     transition-duration:0.4s;
 
 }
-.button1:hover {
+.connectandmessagebutton:hover {
     background-color: dimgray;
     color: lightgray;
 }
-.button1:active {
+.connectandmessagebutton:active {
     vertical-align: top;
     padding-top: 6px;
 }
-.button2{
+.likebutton{
     width:130px;
     background-color:lightgray;
     border:none;
@@ -70,11 +70,11 @@ p.sansserif{
     transition-duration:0.4s;
 
 }
-.button2:hover {
+.likebutton:hover {
     background-color: indianred;
     color: lightgray;
 }
-.button2:active {
+.likebutton:active {
     vertical-align: top;
     padding-top: 6px;
 }

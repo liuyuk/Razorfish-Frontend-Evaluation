@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Widget 1</title>
+        <title>Profile Widget</title>
         <style>
             @import url("styles1.css");
         </style>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <!-- jQuery is used to prevent the color of the like button from changing back -->
         <script>
             $(document).ready(function(){
-                $("button.button2").click(function() {
+                $("button.likebutton").click(function() {
                     alert("You liked his profile!");
                     $(this).css('background-color', 'indianred');
                     $(this).css('color', 'lightgray');
@@ -17,23 +18,26 @@
         </script>
     </head>
     <body>
+        <!-- Profile image -->
         <div>
             <img src="background1.jpg" width="400" height="200">
         </div>
-        <div class="body1">
+        <!-- Container for profile picture and name -->
+        <div class="profile_container">
             <div>
-                <img src="icon1.png" class="icon1"
+                <img src="icon1.png" class="profile_icon"
             </div>
             <div>
-                <h1 class="sansserif">Kim Liu</h1>
-                <p class="sansserif">Welcome to his profile. Leave<br/>
+                <h1 class="header_one_font">Kim Liu</h1>
+                <p class="paragraph_font">Welcome to his profile. Leave<br/>
                     a like or message him.</p>
             </div>
         </div>
-        <div class="body2">
-            <button class="button1">Connect</button>
-            <button class="button1">Message</button>
-            <button class="button2">Like</button>
+        <!-- Container for connect, message, and like buttons -->
+        <div class="buttons_container">
+            <button class="connectandmessagebutton">Connect</button>
+            <button class="connectandmessagebutton">Message</button>
+            <button class="likebutton">Like</button>
         </div>
     </body>
 </html>
