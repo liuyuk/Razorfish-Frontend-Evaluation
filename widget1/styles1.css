@@ -1,0 +1,80 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+.body1{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.body2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.icon1{
+    margin-left: 7%;
+    margin-right: 3%;
+    float: left;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: gray;
+    border: 6px solid #FFF;
+    box-shadow: 0 0 0 1px gray;
+}
+h1.sansserif{
+    font-family: 'Open Sans', serif;
+    font-weight: lighter;
+    line-height: 50%;
+    padding-top: 10px;
+}
+p.sansserif{
+    font-family: 'Open Sans', serif;
+    font-size: 0.8em;
+}
+.button1{
+    width:130px;
+    background-color:lightgray;
+    border:none;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    font-family: 'Open Sans', serif;
+    font-size: 13px;
+    color:dimgray;
+    font-weight: lighter;
+    margin: 1px 1px 1px 1px;
+    padding: 10px 35px;
+    -webkit-transition-duration:0.4s;
+    transition-duration:0.4s;
+
+}
+.button1:hover {
+    background-color: dimgray;
+    color: lightgray;
+}
+.button1:active {
+    vertical-align: top;
+    padding-top: 6px;
+}
+.button2{
+    width:130px;
+    background-color:lightgray;
+    border:none;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    font-family: 'Open Sans', serif;
+    font-size: 13px;
+    color:dimgray;
+    font-weight: lighter;
+    margin: 1px 1px 1px 1px;
+    padding: 10px 35px;
+    -webkit-transition-duration:0.4s;
+    transition-duration:0.4s;
+
+}
+.button2:hover {
+    background-color: indianred;
+    color: lightgray;
+}
+.button2:active {
+    vertical-align: top;
+    padding-top: 6px;
+}
