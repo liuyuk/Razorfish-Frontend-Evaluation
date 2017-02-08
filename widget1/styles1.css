@@ -43,6 +43,8 @@ p.paragraph_font{
     padding: 10px 35px;
     -webkit-transition-duration:0.4s;
     transition-duration:0.4s;
+    -moz-transition-duration:0.4s;
+    transition-duration:0.4s;
 
 }
 .connectandmessagebutton:hover {
@@ -67,6 +69,8 @@ p.paragraph_font{
     margin: 1px 1px 1px 1px;
     padding: 10px 35px;
     -webkit-transition-duration:0.4s;
+    transition-duration:0.4s;
+    -moz-transition-duration:0.4s;
     transition-duration:0.4s;
 
 }

@@ -5,64 +5,23 @@
         <style>
             @import url("styles2.css");
         </style>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="http://code.highcharts.com/highcharts.js"></script>
-        <script>
-            $(function() {
-                Highcharts.setOptions({
-                    colors: ['#17A589', '#ED561B', '#F7DC6F', '#D0D3D4']
-                })
-                var chart = new Highcharts.Chart({
-                    chart: {
-                        renderTo: 'chart_container',
-                        type: 'pie',
-                        borderRadius: 0
-                    },
-                    title: {
-                        text: 'DATA TRANSFER'
-                    },
-                    tooltip: {
-                        pointFormat: '<b>{point.percentage: .1f}%</b>'
-                    },
-                    plotOptions: {
-                        pie: {
-                            allowPointSelect: true,
-                            cursor: 'pointer',
-                            innerSize: '50%',
-                            showInLegend: true,
-                            dataLabels:{
-                                enabled: true,
-                                format: '<b>{point.y}gb'
-                            }
-                        }
-                    },
-                    series: [{
-                        data: [{
-                                name: 'Audio',
-                                y: 112
-                            }, {
-                                name: 'Video',
-                                y: 47
-                            }, {
-                                name: 'Photo', 
-                                y: 35
-                            }, {
-                                name: 'Other',
-                                y: 10
-                            }
-                        ]
-                    }]
-                });
-            });
+        <!-- jQuery is used for showing/hiding different pages, and supporting highchart -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <!-- External library named highchart is used to generate the pie graph -->
+        <script type="text/javascript" src="http://code.highcharts.com/highcharts.js"></script>
+        <script type="text/javascript" src="script2.js"></script>
                                                  
         </script>
     </head>
     <body>
+        <!-- References are made and reserved to link to other pages -->
         <ul class="header">
-            <li a href="#diagram" class="header">Diagram Stats</li>
+            <li a href="#diagram" class="header stats">Diagram Stats</li>
             <li a href="#report" class="header report">Monthly Report</li>
         </ul>
-        <div id="chart_container" style="width:400px; height: 400px; margin-top:20px"></div>
+        <!-- id is used instead of class to differenciate between div and ul/li css -->
+        <div id="chart_container"></div>
+        <div id="report_container">Coming Soon!</div>
         <ul class="footer">
             <li a href="#upload" class="footer upload">UPLOAD FILES</li>
             <li a href="#share" class="footer share">SHARE LINK</li>

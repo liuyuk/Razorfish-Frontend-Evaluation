@@ -9,9 +9,8 @@ ul.header {
 }
 li.header {
     float:left;
-    display:block;
-    color:dimgray;;
-    padding: 20px 49px 20px 49px;
+    display:inline-block;
+    padding: 20px 40px 20px 40px;
     text-decoration: none;
     font-family: 'Open Sans', serif;
     font-size: 14px;
@@ -21,13 +20,20 @@ li.header {
     border-top-right-radius: 10%;
     border-bottom-style: none;
     margin-right: 2px;
+    /* webkit is used to ease the transition */
     -webkit-transition-duration:0.4s;
     transition-duration:0.4s;
+    /* moz is added for firefox support */
+    -moz-transition-duration:0.4s;
+    transition-duration:0.4s;
+}
+li.header.stats {
+    color: dimgray;
 }
 li.header.report {
+    padding-right: 35px;
     background-color: gray;
     color: whitesmoke;
-    border: 1px solid whitesmoke;
 }
 li.header:hover {
     background-color: whitesmoke;
@@ -50,12 +56,14 @@ li.footer {
     float:left;
     display:block;
     color:whitesmoke;
-    padding: 35px 29.6px 20px 31px;
+    padding: 35px 32px 20px 28.6px;
     text-decoration: none;
     font-family: 'Open Sans', serif;
     font-size: 13px;
     border: 1px solid lightgray;
     -webkit-transition-duration:0.4s;
+    transition-duration:0.4s;
+    -moz-transition-duration:0.4s;
     transition-duration:0.4s;
 }
 li.footer:hover {
@@ -82,4 +90,16 @@ li.footer.backup {
     background-position: 48px 15px;
     background-size: 20px 20px;
     background-repeat: no-repeat;
+}
+
+#chart_container {
+    width: 400px;
+    height: 400px;
+    margin-top: 20px
+}
+#report_container {
+    width:400px;
+    height: 400px;
+    margin-top:20px;
+    display: none;
 }
