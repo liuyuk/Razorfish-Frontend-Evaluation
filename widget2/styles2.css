@@ -21,6 +21,8 @@ li.header {
     border-top-right-radius: 10%;
     border-bottom-style: none;
     margin-right: 2px;
+    -webkit-transition-duration:0.4s;
+    transition-duration:0.4s;
 }
 li.header.report {
     background-color: gray;
@@ -53,6 +55,8 @@ li.footer {
     font-family: 'Open Sans', serif;
     font-size: 13px;
     border: 1px solid lightgray;
+    -webkit-transition-duration:0.4s;
+    transition-duration:0.4s;
 }
 li.footer:hover {
     background-color:dimgray;
