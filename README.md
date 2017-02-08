@@ -11,3 +11,9 @@ Widget 2 - Data Tracker:
 Libraries Used:
 - jQuery
 - HighCharts(for the pie chart)
+
+Tested Browsers:
+- Chrome <- optimized for
+- Firefox
+- Safari
+- IE + Edge
