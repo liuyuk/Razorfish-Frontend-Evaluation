@@ -1,0 +1,81 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+ul.header {
+    list-style-type: none;
+    width: 400px;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+
+}
+li.header {
+    float:left;
+    display:block;
+    color:dimgray;;
+    padding: 20px 49px 20px 49px;
+    text-decoration: none;
+    font-family: 'Open Sans', serif;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid gray;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    border-bottom-style: none;
+    margin-right: 2px;
+}
+li.header.report {
+    background-color: gray;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+}
+li.header:hover {
+    background-color: whitesmoke;
+    color: dimgray;
+    cursor: pointer;
+}
+li.header:active {
+    background-color: white;
+}
+ul.footer {
+    list-style-type: none;
+    width: 400px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: gray;
+
+}
+li.footer {
+    float:left;
+    display:block;
+    color:whitesmoke;
+    padding: 35px 29.6px 20px 31px;
+    text-decoration: none;
+    font-family: 'Open Sans', serif;
+    font-size: 13px;
+    border: 1px solid lightgray;
+}
+li.footer:hover {
+    background-color:dimgray;
+    cursor: pointer;
+}
+li.footer:active {
+    background-color:black;
+}
+li.footer.upload {
+    background-image:url(upload.png);
+    background-position: 60px 13px;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+}
+li.footer.share {
+    background-image:url(share.png);
+    background-position: 55px 15px;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+}
+li.footer.backup {
+    background-image:url(backup.png);
+    background-position: 48px 15px;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+}

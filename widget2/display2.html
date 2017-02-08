@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Data Management Widget</title>
+        <style>
+            @import url("styles2.css");
+        </style>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="http://code.highcharts.com/highcharts.js"></script>
+        <script>
+            $(function() {
+                Highcharts.setOptions({
+                    colors: ['#17A589', '#ED561B', '#F7DC6F', '#D0D3D4']
+                })
+                var chart = new Highcharts.Chart({
+                    chart: {
+                        renderTo: 'chart_container',
+                        type: 'pie',
+                        borderRadius: 0
+                    },
+                    title: {
+                        text: 'DATA TRANSFER'
+                    },
+                    tooltip: {
+                        pointFormat: '<b>{point.percentage: .1f}%</b>'
+                    },
+                    plotOptions: {
+                        pie: {
+                            allowPointSelect: true,
+                            cursor: 'pointer',
+                            innerSize: '50%',
+                            showInLegend: true,
+                            dataLabels:{
+                                enabled: true,
+                                format: '<b>{point.y}gb'
+                            }
+                        }
+                    },
+                    series: [{
+                        data: [{
+                                name: 'Audio',
+                                y: 112
+                            }, {
+                                name: 'Video',
+                                y: 47
+                            }, {
+                                name: 'Photo', 
+                                y: 35
+                            }, {
+                                name: 'Other',
+                                y: 10
+                            }
+                        ]
+                    }]
+                });
+            });
+                                                 
+        </script>
+    </head>
+    <body>
+        <ul class="header">
+            <li a href="#diagram" class="header">Diagram Stats</li>
+            <li a href="#report" class="header report">Monthly Report</li>
+        </ul>
+        <div id="chart_container" style="width:400px; height: 400px; margin-top:20px"></div>
+        <ul class="footer">
+            <li a href="#upload" class="footer upload">UPLOAD FILES</li>
+            <li a href="#share" class="footer share">SHARE LINK</li>
+            <li a href="#backup" class="footer backup">BACK UP</li>
+        </ul>
+    </body>
+</html>
