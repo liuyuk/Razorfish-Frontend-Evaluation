@@ -1,5 +1,4 @@
-Razorfish Frontend Evaluation
-Yu Kim Qian Liu
+Razorfish Frontend Evaluation - Yu Kim Qian Liu
 
 Widget 1 - User Profile:
 - 3 clickable buttons with the like button notifying the user.
