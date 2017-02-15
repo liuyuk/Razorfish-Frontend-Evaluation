@@ -48,11 +48,8 @@ $(function() {
             ]
         }]
     });
-});
-
-/* jQuery is used for the switching between header tabs
-and also to hide and show the two contents*/
-$(document).ready(function(){
+    /* jQuery is used for the switching between header tabs
+    and also to hide and show the two contents*/
     $("li.header.report").click(function() {
         $("#chart_container").hide();
         $("#report_container").show();
